@@ -1,0 +1,47 @@
+/*
+ * @Author: 肖祺彦
+ * @Date: 2020-02-19 13:45:11
+ * @LastEditTime: 2020-02-19 16:25:53
+ * @LastEditors: 肖祺彦
+ * @Description: 利用函数做加减乘除的运算
+ * @FilePath: \Ctest\8.1.c
+ */
+#include <stdio.h>
+float sum(float a, float b)//对加法函数进行定义
+{
+    float c;
+    c = a + b;
+    return (c);
+}
+float sub(a, b) float a, b;//对减法函数定义
+{
+    return (a - b);
+}
+float mult(float a, float b) //对乘法函数进行定义
+{
+     return (a * b); 
+}
+float div(float a, float b)//对除法函数进行定义
+{
+    return (a / b);
+}
+fn() { printf("To be developed..."); }//可扩展函数
+main()
+{
+    float x, y, result;
+    char c;
+    printf("input calculate for formula:");
+    scanf("%f%c%f", &x, &c, &y);//输入数据和运算符
+    if (c == '+')
+        result = sum(x, y);
+    else if (c == '-')
+        result = sub(x, y);
+    else if (c == '*')
+        result = mult(x, y);
+    else if (c == '/')
+        result = div(x, y);
+    else 
+        fn();
+    printf("result is %f\n", result);//输出结果
+    return (c);
+}
